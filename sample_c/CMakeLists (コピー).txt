@@ -1,0 +1,42 @@
+cmake_minimum_required(VERSION 2.8.3)
+project(sample_c)
+
+
+find_package(catkin REQUIRED COMPONENTS
+  roscpp
+  std_msgs
+  message_generation
+  geometry_msgs
+)
+
+
+add_message_files(
+  FILES
+  sample_message.msg
+)
+
+generate_messages(
+   DEPENDENCIES
+   std_msgs
+)
+
+catkin_package(
+  CATKIN_DEPENDS message_runtime roscpp std_msgs message_runtime ${MSG_DEPS}
+)
+
+include_directories(
+  ${catkin_INCLUDE_DIRS}
+)
+
+include_directories(include ${catkin_INCLUDE_DIRS})
+
+add_executable(sample_c_publisher src/sample_c_publisher12.cpp)
+target_link_libraries(sample_c_publisher ${catkin_LIBRARIES})
+
+
+add_executable(sample_c_subscriber src/sample_c_subscriber.cpp)
+target_link_libraries(sample_c_subscriber ${catkin_LIBRARIES})
+
+
+
+
