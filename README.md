@@ -33,11 +33,13 @@ git push -uf origin main
 - [ ] [Automatically merge when pipeline succeeds](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
 
 ## Run the Node
-
-- rosrun sample_c sample_c_publisher
+```
+rosrun sample_c sample_c_publisher
+```
 
 sample_c_publisher       seed_command_publisher2  
 seed_command_publisher   seed_command_publisher3
+
 --------------------------------------------------------------------------------
 Node [/sample_c_publisher]
 Publications:
