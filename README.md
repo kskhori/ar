@@ -37,9 +37,13 @@ git push -uf origin main
 rosrun sample_c sample_c_publisher
 ```
 
-sample_c_publisher       seed_command_publisher2  
-seed_command_publisher   seed_command_publisher3
+### Node List
+- sample_c_publisher       
+- seed_command_publisher   
+- seed_command_publisher2  
+- seed_command_publisher3
 
+## Information
 --------------------------------------------------------------------------------
 Node [/sample_c_publisher]
 Publications:
