@@ -1,4 +1,12 @@
 # ar
+This Node is used to actuate linear actuator by ros_controller.
+When desired position of linear actuator is published, this node subscribe it and convert to joint position.
+This value can be used joint controller(position control)
+
+And published joint is down below.
+- Joint Name : PCS9S330
+- Joint Frame: PCS9S330
+- Desired Actuation Time: 0.1s
 
 ## Getting started
 ```
