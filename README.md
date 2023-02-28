@@ -46,6 +46,8 @@ rosrun sample_c sample_c_publisher
 ## Information
 --------------------------------------------------------------------------------
 Node [/sample_c_publisher]
+
 Publications:
+
  * /rosout [rosgraph_msgs/Log]
  * /seed/seed_controller/command [trajectory_msgs/JointTrajectory]
